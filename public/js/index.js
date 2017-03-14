@@ -80,7 +80,7 @@ $(function() {
 		$('.clickload').eq(2).hide();
 		$('.lady-footer').eq(2).show();
 		$('.theme-pavilion').eq(3).show();
-//		$('.footer').show();	
+		$('.footer').show();	
 		$.get('js/1.json',function(msg){
 				var str='';
 				for(var i=18;i<msg.length;i++){
@@ -103,4 +103,12 @@ $(function() {
 	$('.backTop').click(function(){
 		$('body').animate({'scrollTop':'0px'},1000)
 	})
+	
+	
+	
 })
+
+var TestModule=angular.module('TestModule',[]);
+	TestModule.controller('TestController',function($scope,$ht){
+		
+	})
