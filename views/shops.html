@@ -10,11 +10,11 @@
 		<link rel="stylesheet" type="text/css" href="/css/shops.css" />
 	</head>
 
-	<body>
+	<body >
 		<div class="container">
 			<div class="header">
 				<a href="/" class="toindex"></a>
-				<div class="logo">舞涂鸦高帮鞋-女款</div>
+				<div class="logo"><%= data.title %></div>
 				<a href="javascript:void(0)" class="toggleDown"></a>
 			</div>
 			<div class="downBar" style="display: none;">
@@ -45,21 +45,21 @@
 			</div>
 			<div class="main">
 				<div class="shopimg">
-					<img src="image/18.jpg" alt="" />
+					<img src="/image/<%= data.img %>" alt="" />
 				</div>
 				<div class="details">
 					<div class="vip">
 						<span>会员价：</span>
-						<span>￥279.00</span>
-						<span>(7.0折，为您节省：</span>
-						<span>￥120.00)</span>
-					</div>
-					<div class="vip">
-						<span>送货至：</span>
-						<span>￥399.00</span>
+						<span><%= (data.price).toFixed(2) %></span>
+						<span>(<%= (data.price/data.makprice).toFixed(1) %>折，为您节省：</span>
+						<span>￥<%= (data.makprice-data.price).toFixed(2) %>)</span>
 					</div>
 					<div class="vip">
 						<span>市场价：</span>
+						<span>￥<%= data.makprice.toFixed(2) %></span>
+					</div>
+					<div class="vip">
+						<span>送货至：</span>
 						<span>
 							<select name="">
 								<option value="">北京</option>
@@ -81,7 +81,7 @@
 					<div class="commodity-skin">
 						<div class="list">
 							<span>性别：</span>
-							<div class="listright"><span>男</span></div>
+							<div class="listright"><span><%= data.sex  %></span></div>
 						</div>
 						<div class="list">
 							<span>尺码：</span>
@@ -101,9 +101,9 @@
 						<div class="list">
 							<span>数量：</span>
 							<div class="listright">
-								<span>&lt;</span>
-								<input type="text" />
-								<span>&gt;</span>
+								<span class="jian">&lt;</span>
+								<input class="num" type="text" value="<%= data.num %>"/>
+								<span class="jia">&gt;</span>
 							</div>
 						</div>
 						<div class="list">

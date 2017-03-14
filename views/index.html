@@ -92,32 +92,62 @@
 			</div>
 			<p class="man-footer">男鞋</p>
 			<div class="theme-pavilion">
-				<!--<div class="tbl-cell">
-					<a href="">
-						<img src="image/18.jpg" alt="" />
+				<div class="tbl-cell" ng-repeat="shop in shopone">
+					<a href="/shops/{{shop._id}}">
+						<img ng-src="image/{{shop.img}}" alt="" />
 					</a>
 					<span>
-						<a href="">SK8-高帮滑板涂鸦鞋-锦鲤</a>
+						<a href="">{{shop.title}}</a>
 					</span>
 					<span>
-						<a href="">￥279.00 </a>
+						<a href="">{{shop.price}}</a>
 					</span>
-				</div>-->
+				</div>
 			</div>
 			<p class="clickload">&lt;&lt;点击加载更多&gt;&gt;</p>
 			<p  class="lady-footer" style="display:none;">女鞋</p>
 			<div class="theme-pavilion" style="display:none;">
-				
+				<div class="tbl-cell" ng-repeat="shop in shoptwo">
+					<a href="/shops/{{shop._id}}">
+						<img src="image/{{shop.img}}" alt="" />
+					</a>
+					<span>
+						<a href="">{{shop.title}}</a>
+					</span>
+					<span>
+						<a href="">{{shop.price}}</a>
+					</span>
+				</div>
 			</div>
 			<p class="clickload " style="display:none;">&lt;&lt;点击加载更多&gt;&gt;</p>
 			<p  class="lady-footer" style="display:none;">行李箱手表</p>
 			<div class="theme-pavilion" style="display:none;">
-				
+				<div class="tbl-cell" ng-repeat="shop in shopthree">
+					<a href="/shops/{{shop._id}}">
+						<img ng-src="image/{{shop.img}}" alt="" />
+					</a>
+					<span>
+						<a href="">{{shop.title}}</a>
+					</span>
+					<span>
+						<a href="">{{shop.price}}</a>
+					</span>
+				</div>
 			</div>
 			<p class="clickload " style="display:none;">&lt;&lt;点击加载更多&gt;&gt;</p>
 			<p  class="lady-footer" style="display:none;">T恤</p>
 			<div class="theme-pavilion" style="display:none;">
-				
+				<div class="tbl-cell" ng-repeat="shop in shopfour">
+					<a href="/shops/{{shop._id}}">
+						<img ng-src="image/{{shop.img}}" alt="" />
+					</a>
+					<span>
+						<a href="">{{shop.title}}</a>
+					</span>
+					<span>
+						<a href="">{{shop.price}}</a>
+					</span>
+				</div>
 			</div>
 			<div class="footer">
 				<div class="login">
