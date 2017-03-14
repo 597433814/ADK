@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录 IDX爱定客手机版——全球首家在线个性化定制品牌， 网上定制鞋服3C产品的最佳网站！</title>
+		<meta name="Keywords" content="爱定客手机版 ,IDX, 定制鞋 , 帆布鞋 , 潮鞋 , 时尚鞋款 , 滑板鞋 , 发货快 , 平价 , 退换方便 , 正品保证 , 情侣鞋 , 手机壳 , 卫衣 , 移动电源 , 牛仔裤 , 定制手机壳"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="/js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="/css/order.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<a href="/" class="toindex"></a>
+				<div class="logo">确认订单</div>
+				<a href="javascript:void(0)" class="toggleDown"></a>
+			</div>
+			<div class="downBar" style="display: none;">
+				<a href="../" class="index">
+					<span class="icon"></span>
+					<p>首页</p>
+				</a>
+				<a href="" class="index">
+					<span class="icon"></span>
+					<p>商品分类</p>
+				</a>
+						<% if(admin==null){ %>
+							<a href="/users" class="index">				
+						<% }else{ %>
+							<a href="/show" class="index">
+						<% } %>
+					<span class="icon"></span>
+					<p>购物车</p>
+				</a>
+				<% if(admin==null){ %>
+					<a href="/users" class="index">				
+				<% }else{ %>
+					<a href="/show/order" class="index">
+				<% } %>
+					<span class="icon"></span>
+					<p>我的订单</p>
+				</a>
+			</div>
+			
+			
+		</div>
+		<div class="footer">
+				<div class="i-login">
+					<% if(admin==null){ %>
+						<a href="/users">登录</a>						
+					<% }else{ %>
+						<span>你好<%= admin.username %></span>
+						<a href="/users/logout">退出登录</a>
+					<% } %>
+					<a href="/users/create">注册</a>
+					<a href="javascript:void(0)">回到顶部</a>
+				</div>
+				<div class="tp">
+					<span>爱定客触屏版</span>
+					<span>电脑版</span>
+					<span>m.idx.com.cn</span>
+					<span>4008 216 316</span>
+				</div>
+				<p></p>
+		</div>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/js/order.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+	</body>
+</html>

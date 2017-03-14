@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>爱定客手机触屏版</title>
+		<meta name="Keywords" content="爱定客手机版 ,IDX, 定制鞋 , 帆布鞋 , 潮鞋 , 时尚鞋款 , 滑板鞋 , 发货快 , 平价 , 退换方便 , 正品保证 , 情侣鞋 , 手机壳 , 卫衣 , 移动电源 , 牛仔裤 , 定制手机壳"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="normalize.css">
+	</head>
+
+	<body>
+		<div class="container">
+
+			<header>
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="image/ppt1.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="image/ppt2.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="image/ppt3.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="image/ppt5.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="image/ppt6.jpg" alt="">
+						</div>
+					</div>
+					<!-- 如果需要分页器 -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</header>
+			<div class="logo">
+				<img src="image/logo.png" alt="" />
+			</div>
+			<div class="search">
+				<div class="input-box">
+					<input type="text" name="keyword" />
+					<span></span>
+				</div>
+			</div>
+			<div class="category">
+				<ul class="cate-menu">
+					<li>
+						<a href="">
+							<span>
+							<i></i>
+						</span>
+							<p>分类</p>
+						</a>
+					</li>
+					<li>
+						<% if(admin==null){ %>
+							<a href="/users">				
+						<% }else{ %>
+							<a href="/show">
+						<% } %>
+							<span>
+							<i></i>
+						</span>
+							<p>购物车</p>
+						</a>
+					</li>
+					<li>
+						<% if(admin==null){ %>
+							<a href="/users">				
+						<% }else{ %>
+							<a href="/show/order">
+						<% } %>
+							<span>
+							<i></i>
+						</span>
+							<p>我的</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+
+							<span>ARC</span>
+							<p>设计师</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p class="man-footer">男鞋</p>
+			<div class="theme-pavilion">
+				<!--<div class="tbl-cell">
+					<a href="">
+						<img src="image/18.jpg" alt="" />
+					</a>
+					<span>
+						<a href="">SK8-高帮滑板涂鸦鞋-锦鲤</a>
+					</span>
+					<span>
+						<a href="">￥279.00 </a>
+					</span>
+				</div>-->
+			</div>
+			<p class="clickload">&lt;&lt;点击加载更多&gt;&gt;</p>
+			<p  class="lady-footer" style="display:none;">女鞋</p>
+			<div class="theme-pavilion" style="display:none;">
+				
+			</div>
+			<p class="clickload " style="display:none;">&lt;&lt;点击加载更多&gt;&gt;</p>
+			<p  class="lady-footer" style="display:none;">行李箱手表</p>
+			<div class="theme-pavilion" style="display:none;">
+				
+			</div>
+			<p class="clickload " style="display:none;">&lt;&lt;点击加载更多&gt;&gt;</p>
+			<p  class="lady-footer" style="display:none;">T恤</p>
+			<div class="theme-pavilion" style="display:none;">
+				
+			</div>
+			<div class="footer">
+				<div class="login">
+					<% if(admin==null){ %>
+						<a href="/users">登录</a>						
+					<% }else{ %>
+						<span>你好<%= admin.username %></span>
+						<a href="/users/logout">退出登录</a>
+					<% } %>
+					<a href="/users/create">注册</a>
+					<span class="new_fr">				
+						<a href="">反馈&nbsp;|</a>
+						<a href="javascript:void(0)" class="backTop">回到顶部</a>
+					</span>
+				</div>
+				<div class="version">
+					<a href="">关于爱定客</a>
+					<a href="">联系我们</a>
+				</div>
+				<p>© m.idx.com.cn </p>
+			</div>
+		</div>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+	</body>
+
+</html>
