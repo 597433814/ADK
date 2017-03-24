@@ -11,25 +11,6 @@ $(function() {
 	})
 	
 	
-	$('.clickload:eq(0)').click(function(){
-		$('.clickload:eq(0)').hide();
-		$('.lady-footer:eq(0)').show();
-		$('.theme-pavilion').eq(1).show();
-		$('.clickload').eq(1).show();
-	})
-	$('.clickload:eq(1)').click(function(){
-		$('.clickload').eq(1).hide();
-		$('.lady-footer').eq(1).show();
-		$('.theme-pavilion').eq(2).show();
-		$('.clickload').eq(2).show();
-	})
-	$('.clickload:eq(2)').click(function(){
-		$('.clickload').eq(2).hide();
-		$('.lady-footer').eq(2).show();
-		$('.theme-pavilion').eq(3).show();
-		$('.footer').show();	
-	})
-	
 	$('.backTop').click(function(){
 		$('body').animate({'scrollTop':'0px'},1000)
 	})

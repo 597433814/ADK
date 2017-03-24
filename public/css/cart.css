@@ -2,6 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 	text-decoration: none;
+	list-style: none;
 }
 .container {
 	min-width: 320px;
@@ -120,4 +121,143 @@
 	border-top: 1px solid #919191;
     height: 5px;
     background: #a3a3a3;
+}
+.main{
+	width:100%;
+	
+}
+.ct-inner{
+	width:96%;
+	padding:2%;
+}
+.chanal{
+	width:100%;
+	height:1.625rem;
+	    border-bottom: 1px solid #ccc;
+}
+.chanal .inner{
+	width:96%;
+}
+.chanal .inner p span{
+	color: #ff3366;
+}
+.tolist{
+	background:#f88e8e ;
+	text-align: center;
+	color:#FFFFFF;
+	width: 3.75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+	float: right;
+}
+.data-caption{
+	width:96%;
+	margin:0 auto;
+}
+.data-caption .inner{
+	width:96%;
+}
+
+.data-caption .inner a{
+	color:#ff3366;
+}
+.lists{
+	width:96%;
+	margin:0px auto;
+}
+.lists ul li{
+	width:100%;
+	height:8.5rem;
+	border-bottom: 1px solid #cccccc;
+}
+.check{
+	padding: 0.625rem;
+	width:1.187rem;
+	height:7.25rem;
+	line-height: 7.25rem;
+	text-align: center;
+	float: left;
+}
+.check input{
+	width:1rem;
+	height:1rem;
+}
+.shops{
+	width:18.5rem;
+	height:7.25rem;
+	padding:0.625rem ;
+	float: left;
+}
+.shangpin{
+	width:18.5rem;
+	height:7.25rem;
+}
+.shangpin>p{
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: left;
+}
+.listright{
+	width:12.875rem;
+	height:4.5rem;
+	float: left;
+	color:#555;
+}
+.listright p{
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.listright p input{
+	width: 2.25rem;
+    height: 1.25rem;
+    margin: 0 2px;
+    border: 1px solid #c5c1b8;
+    color: #2a2b2d;
+    line-height: 1.25rem;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.listright p span{
+	background-color: #ff6162;
+    display: inline-block;
+    vertical-align: middle;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: #fff;
+    margin-top: 1px;
+}
+.w-bg{
+	background: #fff;
+    padding: 0.625rem;
+    width: 18.75rem;
+    height:3rem;
+    margin: 0.625rem auto;
+    font-size: .8rem;
+}
+.w-bg p span{
+	color:#ff3366;
+}
+.topay{
+	width:22.18rem;
+	height:2.25rem;
+	background: #f88e8e;
+	color:white;
+	font-weight: 700;
+	text-align: center;
+	line-height: 2.25rem;
+}
+.b2{
+	width:21rem;
+	height:1rem;
+	padding: 0.625rem;
 }

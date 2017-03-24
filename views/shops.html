@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<script src="/js/rem.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="/css/shops.css" />
+		
 	</head>
 
 	<body >
@@ -85,7 +86,7 @@
 						</div>
 						<div class="list">
 							<span>尺码：</span>
-							<div class="listright">
+							<div class="listright size">
 								<span>39.5</span>
 								<span>40</span>
 								<span>40.5</span>
@@ -107,9 +108,13 @@
 							</div>
 						</div>
 						<div class="list">
-							
 						<div class="buy">立即购买</div>
-						<div class="join">加入购物车</div>
+						<% if(admin==null){ %>
+							<a href="/users"><div class="join">加入购物车</div></a>
+						<% }else{ %>
+							<a href="/show"><div class="join">加入购物车</div></a>
+						<% } %>	
+						
 						</div>
 					</div>
 				</div>

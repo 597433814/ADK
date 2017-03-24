@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en" ng-app="TestModule">
+
 	<head>
 		<meta charset="UTF-8" />
 		<title>爱定客手机触屏版</title>
-		<meta name="Keywords" content="爱定客手机版 ,IDX, 定制鞋 , 帆布鞋 , 潮鞋 , 时尚鞋款 , 滑板鞋 , 发货快 , 平价 , 退换方便 , 正品保证 , 情侣鞋 , 手机壳 , 卫衣 , 移动电源 , 牛仔裤 , 定制手机壳"/>
+		<meta name="Keywords" content="爱定客手机版 ,IDX, 定制鞋 , 帆布鞋 , 潮鞋 , 时尚鞋款 , 滑板鞋 , 发货快 , 平价 , 退换方便 , 正品保证 , 情侣鞋 , 手机壳 , 卫衣 , 移动电源 , 牛仔裤 , 定制手机壳" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<script src="js/rem.js" type="/text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.min.css">
@@ -11,8 +12,9 @@
 		<link rel="stylesheet" href="/normalize.css">
 		<script src="/bower_components/angular/angular.min.js"></script>
 	</head>
+
 	<body ng-controller="TestController">
-		<div class="container" >
+		<div class="container">
 
 			<header>
 				<!-- Swiper -->
@@ -59,27 +61,27 @@
 					</li>
 					<li>
 						<% if(admin==null){ %>
-							<a href="/users">				
-						<% }else{ %>
+						<a href="/users">
+							<% }else{ %>
 							<a href="/show">
-						<% } %>
-							<span>
+								<% } %>
+								<span>
 							<i></i>
 						</span>
-							<p>购物车</p>
-						</a>
+								<p>购物车</p>
+							</a>
 					</li>
 					<li>
 						<% if(admin==null){ %>
-							<a href="/users">				
-						<% }else{ %>
+						<a href="/users">
+							<% }else{ %>
 							<a href="/show/order">
-						<% } %>
-							<span>
+								<% } %>
+								<span>
 							<i></i>
 						</span>
-							<p>我的</p>
-						</a>
+								<p>我的</p>
+							</a>
 					</li>
 					<li>
 						<a href="">
@@ -104,9 +106,8 @@
 					</span>
 				</div>
 			</div>
-			<p class="clickload">&lt;&lt;点击加载更多&gt;&gt;</p>
-			<p  class="lady-footer" style="display:none;">女鞋</p>
-			<div class="theme-pavilion" style="display:none;">
+			<p class="lady-footer">女鞋</p>
+			<div class="theme-pavilion">
 				<div class="tbl-cell" ng-repeat="shop in shoptwo">
 					<a href="/shops/{{shop._id}}">
 						<img src="image/{{shop.img}}" alt="" />
@@ -119,9 +120,8 @@
 					</span>
 				</div>
 			</div>
-			<p class="clickload " style="display:none;">&lt;&lt;点击加载更多&gt;&gt;</p>
-			<p  class="lady-footer" style="display:none;">行李箱手表</p>
-			<div class="theme-pavilion" style="display:none;">
+			<p class="lady-footer">行李箱手表</p>
+			<div class="theme-pavilion">
 				<div class="tbl-cell" ng-repeat="shop in shopthree">
 					<a href="/shops/{{shop._id}}">
 						<img ng-src="image/{{shop.img}}" alt="" />
@@ -134,9 +134,8 @@
 					</span>
 				</div>
 			</div>
-			<p class="clickload " style="display:none;">&lt;&lt;点击加载更多&gt;&gt;</p>
-			<p  class="lady-footer" style="display:none;">T恤</p>
-			<div class="theme-pavilion" style="display:none;">
+			<p class="lady-footer">T恤</p>
+			<div class="theme-pavilion">
 				<div class="tbl-cell" ng-repeat="shop in shopfour">
 					<a href="/shops/{{shop._id}}">
 						<img ng-src="image/{{shop.img}}" alt="" />
@@ -152,10 +151,10 @@
 			<div class="footer">
 				<div class="login">
 					<% if(admin==null){ %>
-						<a href="/users">登录</a>						
+					<a href="/users">登录</a>
 					<% }else{ %>
-						<span>你好<%= admin.username %></span>
-						<a href="/users/logout">退出登录</a>
+					<span>你好<%= admin.username %></span>
+					<a href="/users/logout">退出登录</a>
 					<% } %>
 					<a href="/users/create">注册</a>
 					<span class="new_fr">				
@@ -170,7 +169,7 @@
 				<p>© m.idx.com.cn </p>
 			</div>
 		</div>
-		
+
 		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="/js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script src="/bower_components/swiper/dist/js/swiper.jquery.min.js"></script>

@@ -82,49 +82,6 @@
 	    background: url(../image/icon2b.png) -5.2rem -1.56rem no-repeat;
 	    background-size:11rem;
 }
-
-.forms{
-	width:100%;
-	height:12rem;
-}
-form{
-	width:99%;
-	border:1px solid #CCC;
-	border-radius: 5px;
-	margin-top:5%;
-	
-}
-form input{
-	width:95%;
-	padding: 0.85rem 0.5rem;
-	margin:0px 1px;
-	border:0px;
-	border-bottom: 1px solid #CCCCCC;
-	outline: none;
-	font-size: 0.8rem;
-}
-form p{
-	width:100%;
-	height: 3px;
-	background: #CCC;
-}
-.submit{
-	width:100%;
-	/*margin-top:10%;*/
-	background: #FF6C6D;
-	color: #FFFFFF;
-	text-align: center;
-	font-size: 1rem;
-}
-.formInner{
-	display: block;
-	width:100%;
-	height:2rem;
-	line-height:2rem;
-	font-size: 1rem;
-	color:#FF6C6D;
-	
-}
 .atherlogin{
 	width:95%;
 	margin:0 auto;
@@ -347,4 +304,8 @@ form p{
     text-align: center;
     line-height: 2.25rem;
     margin-left: 10%;
+}
+
+.jiabian{
+	border: 2px solid #ff6162 !important;
 }

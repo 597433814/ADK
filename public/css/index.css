@@ -204,6 +204,8 @@ header {
 .login {
 	width: 94%;
 	padding: 3%;
+	border-top:1px solid #DDD;
+	background: #CCCCCC;
 }
 
 .login a {

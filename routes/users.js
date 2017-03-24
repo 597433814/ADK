@@ -68,4 +68,6 @@ router.get('/checkUsername',function(req,res){
 		res.json(obj)
 	})
 })
+
+
 module.exports = router;
