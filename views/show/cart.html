@@ -67,29 +67,31 @@
 				</div>
 				<div class="lists">
 					<ul>
-						<li>
+						<% fuck.forEach(function(value,key){ %>
+						<li >
 							<div class="check">
 								<input type="checkbox" />
 							</div>
 							<div class="shops">
 								<div class="shangpin">
 									<p>
-										<img src="" alt="" />
+										<img src="<%= value.img %>" alt="" />
 									</p>
 									<div class="listright">
-										<p>王俊凯设计劲舞涂鸦高帮鞋  女</p>
-										<p>尺码：35</p>
-										<p>单价：￥289</p>
+										<p><%= value.title %></p>
+										<p>尺码：<%= value.size %></p>
+										<p>单价：￥<%= value.price %></p>
 										<p>
 											数量：
 											<span>-</span>
-											<input type="text" />
+											<input type="text" value="<%= value.num %>"/>
 											<span>+</span>
 										</p>
 									</div>
 								</div>
 							</div>
 						</li>
+						<% }) %>
 					</ul>
 					<div class="w-bg">
 						<p>总计：<span>¥1156</span></p>

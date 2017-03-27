@@ -199,6 +199,10 @@
     background: #fff;
     float: left;
 }
+.shangpin p img{
+	width:100%;
+	height:100%;
+}
 .listright{
 	width:12.875rem;
 	height:4.5rem;
